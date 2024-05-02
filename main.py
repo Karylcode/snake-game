@@ -27,7 +27,7 @@ RIGHT = (1, 0)
 # 顯示分數和遊戲畫面更新
 def display_score(surface, current_score, high_score):
     # 在畫面上顯示分數和最高分
-    font = pygame.font.Font(None, 24)
+    font = pygame.font.Font("pixel_font.ttf", 16)
     score_text = font.render(f"Score: {current_score}  High Score: {high_score}", True, WHITE)
     surface.blit(score_text, (10, 10))
 
